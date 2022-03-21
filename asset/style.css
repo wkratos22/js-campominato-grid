@@ -1,0 +1,41 @@
+:root{
+    --background-botton: rgb(42, 148, 190);
+    --background-body: aqua;
+}
+
+body{
+    background-color: var(--background-body);
+}
+
+.container{
+    border: 1px solid #fff;
+    width: 60%;
+    margin: 0 auto;
+    height: 60vh;
+    margin-top: 10%;
+}
+
+.box{
+    width: calc(100% / 10);
+    height: calc(100%/ 10);
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin-top: -6px;
+}
+
+.clicked{
+    background-color: var(--background-botton);
+}
+
+.h1{
+    padding: 15px;
+    margin-left: 15%;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.margin{
+    margin-left: 50%;
+}
