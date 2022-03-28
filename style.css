@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --margin: 20px;
+    --primary: aquamarine;
+    --dark: #000;
+    --cells-row: 10;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+  }
+  
+  .area-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .area-logo h1,
+  .area-buttons button {
+    margin-left: var(--margin);
+  }
+  
+  .area-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .area-buttons label {
+    margin-right: var(--margin);
+  }
+  
+  .none{
+    display: none;
+  }
+  
+  main {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .griglia{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--dark);
+  }
+  
+  .box{
+    width: calc(100% / var(--cells-row));
+    height: calc(100% / var(--cells-row));
+    padding: 10px;
+    border: 1px solid var(--dark);
+  }
+  
+  .box-10{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    padding: 10px;
+    border: 1px solid var(--dark);
+  }
+  
+  .box-9{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    padding: 10px;
+    border: 1px solid var(--dark);
+  }
+  
+  .box-7{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    padding: 10px;
+    border: 1px solid var(--dark);
+  }
+  
+  .clicked{
+    background-color: #6495ED;
+  }
+  
+  .bomba{
+    background-color: red;
+  }
+  
+  footer {
+    height: 10vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
